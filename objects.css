@@ -1,0 +1,19 @@
+.flowSpot{
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: Consolas;
+    position: absolute;
+    user-select: none;
+    overflow: auto;
+    z-index: 2;
+}
+.line{
+    stroke:black;
+    stroke-width:5;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="objects.css">
+    <link rel="stylesheet" href="page.css">
+    <script src="flowChart.js"></script>
+    <title>Flowchart Maker</title>
+</head>
+<body>
+    <div class="bar">
+        <button class="menuBtn" id="add"><img src="svg/add.svg" class="icon"></button>
+        <div class="spacer"></div>
+        <button class="menu menuBtn" name="remove"><img src="svg/remove.svg" class="icon"></button>
+        <div class="spacer"></div>
+        <button class="menu menuBtn" name="move"><img src="svg/pan.svg" class="icon"></button>
+        <div class="spacer"></div>
+        <button class="menu menuBtn" name="resize"><img src="svg/crop.svg" class="icon"></button>
+        <div class="spacer"></div>
+        <button class="menu menuBtn" name="arrow"><img src="svg/arrow-right-top.svg" class="icon"></button>
+    </div>
+    <div id="addBox">
+        <input type="text" class="inheritVisibility" id="boxNameInput">
+        <div class="colorHolder">
+            <button class="color" style="background-color: #ffadadff;" name="#ffadadff"></button>
+            <button class="color" style="background-color: #ffd6a5ff;" name="#ffd6a5ff"></button>
+            <button class="color" style="background-color: #fdffb6ff;" name="#fdffb6ff"></button>
+            <button class="color" style="background-color: #caffbfff;" name="#caffbfff"></button>
+            <button class="color" style="background-color: #a0c4ffff;" name="#a0c4ffff"></button>
+            <button class="color" style="background-color: #bdb2ffff;" name="#bdb2ffff"></button>
+            <button class="color" style="background-color: #fffffcff;" name="#fffffcff"></button>
+        </div>
+    </div>
+    <div id="holder">
+        <svg id="lineHolder" style="width: 100%; height: 100%; z-index: 1; position: absolute;" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+</body>
+</html>
