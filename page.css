@@ -9,7 +9,7 @@ html,body{
     background-color: var(--back);
     --back: #1d3557;
     --primary: #457b9d;
-    --secondary: #a8dadc;
+    --secondary: #7644ff;
 }
 *{
     z-index: 1;
@@ -36,18 +36,19 @@ html,body{
     justify-content: center;
     align-items: center;
     border: none;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     border-radius: 2rem;
     transition: .15s;
+    margin-bottom: 1vh;
+}
+.menuBtn:hover{
+    border-radius: 1rem;
+
 }
 .icon{
     width: 50%;
     height: 50%;
     pointer-events: none;
-}
-.spacer{
-    width: 1vh;
-    height: 1vh;
 }
 .inheritVisibility{
     visibility: inherit;
@@ -71,6 +72,10 @@ html,body{
     font-size: 2vh;
     border-radius: 1rem;
     text-align: center;
+}
+#boxNum{
+    width: 10%;
+    border: none;
 }
 #holder{
     width: 100%;
