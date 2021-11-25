@@ -8,16 +8,19 @@ window.onload = function () {
         element.addEventListener("click",function(){changeMode(element.name)});
     });
     renderButtonSelection();
-    // Create box listeners
+    // Create pop-up listeners
     addPop = document.getElementById("addBox");
     addBtn = document.getElementById("addBoxBtn");
     addText = document.getElementById("boxNameInput");
     addNum = document.getElementById("boxNum");
-
+    // Github link listener
+    document.getElementById("sourceLink").addEventListener("click",function(){window.location.href = "https://github.com/Li0ss/FlowChart"});
     // Create box button
     document.getElementById("add").addEventListener("click",function(){toggleElementVisibility(addPop)});
     // Clear all lines button
-    document.getElementById("clearAll").addEventListener("click",function (){clearAllChildElements(lineHolder)});
+    document.getElementById("clearAll").addEventListener("click",function (){
+        clearAllChildElements(lineHolder);
+    });
     // Box color buttons
     Array.from(document.getElementsByClassName("color")).forEach(element => {
         element.addEventListener("click",function(){createBox(element.name)});
@@ -26,7 +29,6 @@ window.onload = function () {
     holder = document.getElementById("holder");
     lineHolder = document.getElementById("lineHolder");
     holder.onmousedown = function () {arrow()}
-
 }
 // Arrow drawing
 function arrow(){

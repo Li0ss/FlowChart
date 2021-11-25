@@ -13,17 +13,38 @@
     <!-- Sidebar -->
     <div class="bar">
         <!-- Sidebar mode buttons -->
-        <button class="menuBtn mode" name="move"><img src="svg/pan.svg" class="icon"></button>
-        <button class="menuBtn mode" name="resize"><img src="svg/crop.svg" class="icon"></button>
-        <button class="menuBtn mode" name="arrow"><img src="svg/arrow-right-top.svg" class="icon"></button>
-        <button class="menuBtn mode" name="remove"><img src="svg/remove.svg" class="icon"></button>
+        <div class="menuSlot">
+            <button class="menuBtn mode" name="move"><img src="svg/pan.svg" class="icon"></button>
+            <a class="tag">Move Box</a>
+        </div>
+        <div class="menuSlot">
+            <button class="menuBtn mode" name="resize"><img src="svg/crop.svg" class="icon"></button>
+            <a class="tag">Resize Box</a>
+        </div>
+        <div class="menuSlot">
+            <button class="menuBtn mode" name="arrow"><img src="svg/arrow-right-top.svg" class="icon"></button>
+            <a class="tag">Draw lines</a>
+        </div>
+        <div class="menuSlot">
+            <button class="menuBtn mode" name="remove"><img src="svg/remove.svg" class="icon"></button>
+            <a class="tag">Remove</a>
+        </div>
         <!-- Sidebar menu buttons -->
-        <button class="menuBtn" id="add"><img src="svg/add.svg" class="icon"></button>
-        <button class="menuBtn" id="clearAll"><img src="svg/cancel.svg" class="icon"></button>
+        <div class="menuSlot">
+            <button class="menuBtn" id="add"><img src="svg/add.svg" class="icon"></button>
+            <a class="tag">Add Box</a>
+        </div>
+        <div class="menuSlot">
+            <button class="menuBtn" id="clearAll"><img src="svg/cancel.svg" class="icon"></button>
+            <a class="tag">Clear lines</a>
+        </div>
         <!-- Sidebar github link -->
-        <a href="https://github.com/Li0ss/FlowChart">
-            <button class="menuBtn" link="google.com"><img src="svg/code-alt.svg" class="icon"></button>
-        </a>
+        <div class="menuSlot">
+            <button id="sourceLink" class="menuBtn">
+                <img src="svg/code-alt.svg" class="icon">
+            </button>
+            <a class="tag">Source Code</a>
+        </div>
     </div>
     <!-- Box creation pop-up -->
     <div id="addBox">
